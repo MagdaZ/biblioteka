@@ -654,6 +654,7 @@ public class Biblioteka extends JFrame implements Serializable {
         lendsMenuItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
             	textArea.setText("");
+            
             	for (Wypozyczenie k: wypozyczenia) {  
             		textArea.append(k+"\n");
             	}		
@@ -811,6 +812,7 @@ public class Biblioteka extends JFrame implements Serializable {
 		return wypozyczenia;
 	}
 
+	
 	/**
 	 * @param wypozyczenia the wypozyczenia to set
 	 */
