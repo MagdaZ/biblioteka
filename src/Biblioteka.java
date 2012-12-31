@@ -648,7 +648,7 @@ public class Biblioteka extends JFrame implements Serializable {
 
         // Pozycja menu: Wyswietl wypozyczenia
         JMenuItem lendsMenuItem = new JMenuItem("Wyœwietl wypo¿yczenia");
-        lendsMenuItem.setMnemonic(KeyEvent.VK_Y);
+        lendsMenuItem.setMnemonic(KeyEvent.VK_W);
         lendsMenuItem.setToolTipText("Wyœwietlenie listy ksi¹¿ek");
         // Podpiecie akcji pod "Wyswietl wypozyczenia"
         lendsMenuItem.addActionListener(new ActionListener() {
@@ -673,7 +673,7 @@ public class Biblioteka extends JFrame implements Serializable {
         
         // Pozycja menu: Usuñ  czytelnika
         JMenuItem newDeleteReaderMenuItem = new JMenuItem("Usuñ  czytelnika");
-        newDeleteReaderMenuItem.setMnemonic(KeyEvent.VK_L);
+        newDeleteReaderMenuItem.setMnemonic(KeyEvent.VK_U);
         // Podpiecie akcji pod "Usuñ czytelnika"
         newDeleteReaderMenuItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
@@ -684,7 +684,7 @@ public class Biblioteka extends JFrame implements Serializable {
         
         // Pozycja menu: Dodaj nowa ksiazke
         JMenuItem newBookMenuItem = new JMenuItem("Dodaj now¹ ksiazkê");
-        newBookMenuItem.setMnemonic(KeyEvent.VK_K);
+        newBookMenuItem.setMnemonic(KeyEvent.VK_S);
         // Podpiecie akcji pod "Dodaj nowaksiazke"
         newBookMenuItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
@@ -695,7 +695,7 @@ public class Biblioteka extends JFrame implements Serializable {
         
         // Pozycja menu: Usuñ  ksiazke
         JMenuItem newDeleteBookMenuItem = new JMenuItem("Usuñ  ksi¹¿kê");
-        newDeleteBookMenuItem.setMnemonic(KeyEvent.VK_M);
+        newDeleteBookMenuItem.setMnemonic(KeyEvent.VK_I);
         // Podpiecie akcji pod "Usuñ ksiazke"
         newDeleteBookMenuItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
@@ -707,7 +707,7 @@ public class Biblioteka extends JFrame implements Serializable {
         
         // Pozycja menu: Wypozycz ksiazke czytelnikowi
         JMenuItem lendBookMenuItem = new JMenuItem("Wypo¿ycz ksi¹¿kê czytelnikowi");
-        lendBookMenuItem.setMnemonic(KeyEvent.VK_W);
+        lendBookMenuItem.setMnemonic(KeyEvent.VK_Y);
         // Podpiecie akcji pod "Wypozycz ksiazke czytelnikowi"
         lendBookMenuItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
@@ -718,7 +718,7 @@ public class Biblioteka extends JFrame implements Serializable {
         
        // Pozycja menu: Zwróæ ksi¹¿kê
         JMenuItem borrowBookMenuItem = new JMenuItem("Czytelnik zwraca ksi¹¿kê");
-        borrowBookMenuItem.setMnemonic(KeyEvent.VK_B);
+        borrowBookMenuItem.setMnemonic(KeyEvent.VK_L);
         // Podpiecie akcji pod "Zwróæ ksi¹¿kê"
         borrowBookMenuItem.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
