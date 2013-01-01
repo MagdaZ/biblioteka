@@ -518,6 +518,7 @@ class BorrowDialog extends JDialog {
      add(Box.createRigidArea(new Dimension(0, 6)));
      
      final JComboBox wypozyczeniaComboBox = new JComboBox(bib.getWypozyczenia().toArray());
+     
      wypozyczeniaComboBox.setSelectedIndex(-1);
      wypozyczeniaComboBox.setPreferredSize(new Dimension(450, 22));
      wypozyczeniaComboBox.setMaximumSize(new Dimension(450, 22));
@@ -819,6 +820,8 @@ public class Biblioteka extends JFrame implements Serializable {
 	public void setWypozyczenia(ArrayList<Wypozyczenie> wypozyczenia) {
 		this.wypozyczenia = wypozyczenia;
 	}
+	
+   
 
 	public long getNumer_czytelnika() {
 		return numer_czytelnika;
