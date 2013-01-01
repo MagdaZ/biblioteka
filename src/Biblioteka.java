@@ -670,6 +670,11 @@ public class Biblioteka extends JFrame implements Serializable {
             public void actionPerformed(ActionEvent event) {
                 ReaderDialog ad = new ReaderDialog(bib);
                 ad.setVisible(true);
+                //wyœwietlenie pe³nej listy czytelników po dodaniu nowego
+                textArea.setText ("Wszyscy czytelnicy: \n \n");
+                for (Czytelnik c: czytelnicy) {  
+                	textArea.append(c+"\n");
+                }
             }
         });
         
@@ -681,6 +686,11 @@ public class Biblioteka extends JFrame implements Serializable {
             public void actionPerformed(ActionEvent event) {
                 DeleteReaderDialog ad = new DeleteReaderDialog(bib);
                 ad.setVisible(true);
+              //wyœwietlenie pe³nej listy czytelników po usuniêciu
+                textArea.setText ("Wszyscy czytelnicy: \n \n");
+                for (Czytelnik c: czytelnicy) {  
+            		textArea.append(c+"\n");
+                }
             }
         });
         
@@ -692,6 +702,11 @@ public class Biblioteka extends JFrame implements Serializable {
             public void actionPerformed(ActionEvent event) {
                 BookDialog ad = new BookDialog(bib);
                 ad.setVisible(true);
+              //wyœwietlenie pe³nej listy ksi¹¿ek po dodaniu nowej
+                textArea.setText("Wszystkie ksi¹¿ki \n \n");
+            	for (Ksiazka k: ksiazki) {  
+            		textArea.append(k+"\n");
+            	}		
             }
         });
         
@@ -703,6 +718,11 @@ public class Biblioteka extends JFrame implements Serializable {
             public void actionPerformed(ActionEvent event) {
                 DeleteBookDialog ad = new DeleteBookDialog(bib);
                 ad.setVisible(true);
+                //wyœwietlenie pe³nej listy ksi¹¿ek po usuniêciu
+                textArea.setText("Wszystkie ksi¹¿ki \n \n");
+            	for (Ksiazka k: ksiazki) {  
+            		textArea.append(k+"\n");
+            	}		
             }
         });
         
@@ -715,6 +735,12 @@ public class Biblioteka extends JFrame implements Serializable {
             public void actionPerformed(ActionEvent event) {
                 LendDialog ad = new LendDialog(bib);
                 ad.setVisible(true);
+                //wypo¿yczenie
+                textArea.setText("Wypo¿yczenia: \n \n");
+                for (Wypozyczenie k: wypozyczenia) {  
+            		textArea.append(k+"\n");
+            	}	
+         		
             }
         });
         
@@ -726,6 +752,11 @@ public class Biblioteka extends JFrame implements Serializable {
             public void actionPerformed(ActionEvent event) {
                 BorrowDialog ad = new BorrowDialog(bib);
                 ad.setVisible(true);
+                //wypo¿yczenia jakie zosta³y
+                textArea.setText("Wypo¿yczenia: \n \n");
+                for (Wypozyczenie k: wypozyczenia) {  
+            		textArea.append(k+"\n");
+            	}	
             }
         });
 
